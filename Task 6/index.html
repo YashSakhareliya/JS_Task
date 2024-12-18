@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Value Converter</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="container">
+                <h1>Value Converter</h1>
+
+                <label for="chooseConverter">Select Converter</label>
+                <select name="select" id="select">
+                    <option value="Choose Anyone" disabled>Select any value</option>
+                    <option value="D to Rupee">Doller to Rupee</option>
+                    <option value="C to F">C to F</option>
+                    <option value="Kg to Pound">Kg to Pound</option>
+                </select>
+                <br>
+                Value:<input type="number" id="value" placeholder="Enter the value" required>
+                <h3 id="Output">Output:</h3>
+                <button onclick="show()" id="submit">Convert</button>
+            </div>
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+
+</html>
